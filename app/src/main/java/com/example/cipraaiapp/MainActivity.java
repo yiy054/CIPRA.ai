@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
             NetworkHandler.sendGetRequest(
                 NetworkHandler.buildUrl(email, password),
                 new NetworkHandler.GetResponseCallback() {
+                    //Correct Email: jared.leitner@gmail.com
+                    //Correct Password: Test123!*
                     @Override
                     public void onSuccess(String response) {
                         Intent intent = new Intent(
